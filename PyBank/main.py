@@ -46,3 +46,13 @@ print(f"Average Change: ${diff_avg}")
 print(f"Greatest Increase in Profits: {greatest_increase_year} (${greatest_increase})")
 print(f"Greatest Decrease in Profits: {greatest_decrease_year} (${greatest_decrease})")
 
+output_path = os.path.join('C:/Users/Zacha/Documents','python-challenge','PyBank','totals_output.csv')
+
+with open(output_path, 'w', newline='') as csvfile:
+    csvwriter = csv.writer(csvfile, delimiter=',')
+    csvwriter.writerow(['Financial Analysis'])
+    csvwriter.writerow(['Total Months',nummonths])
+    csvwriter.writerow(['Total','$'+str(sum)])
+    csvwriter.writerow(['Average Change', '$'+str(diff_avg)])
+    csvwriter.writerow(['Greatest Increase in Profits',greatest_increase_year,'$'+str(greatest_increase)])
+    csvwriter.writerow(['Greatest Increase in Profits',greatest_decrease_year,'$'+str(greatest_decrease)])
