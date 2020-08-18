@@ -42,7 +42,7 @@ print("---------------------")
 print(f"Winner: {Winner}")
 print("---------------------")
 
-output_path = os.path.join('C:/Users/Zacha/Documents','python-challenge','PyPoll','Election_Results.csv')
+output_path = os.path.join('PyPoll','Election_Results.txt')
 
 with open(output_path, 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')

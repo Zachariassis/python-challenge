@@ -46,7 +46,7 @@ print(f"Average Change: ${diff_avg}")
 print(f"Greatest Increase in Profits: {greatest_increase_year} (${greatest_increase})")
 print(f"Greatest Decrease in Profits: {greatest_decrease_year} (${greatest_decrease})")
 
-output_path = os.path.join('C:/Users/Zacha/Documents','python-challenge','PyBank','totals_output.csv')
+output_path = os.path.join('PyBank','totals_output.txt')
 
 with open(output_path, 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')
