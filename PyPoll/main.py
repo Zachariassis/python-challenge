@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath=os.path.join('C:/Users/Zacha/Documents','python-challenge','PyPoll','election_data.csv')
+csvpath=os.path.join('Pypoll','election_data.csv')
 Candidates=["empty"]
 Results=[10]
 Percent=[]

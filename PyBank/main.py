@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath=os.path.join('C:/Users/Zacha/Documents','python-challenge','PyBank','budget_data.csv')
+csvpath=os.path.join('PyBank','budget_data.csv')
 #print(csvpath)
 sum=0
 nummonths=0
@@ -36,7 +36,7 @@ with open(csvpath) as csvfile:
         #print(row)
         #print(type(row))
 
-diff_avg=round(diff_val/nummonths)
+diff_avg=round(diff_val/(nummonths-1),2)
 
 print("Financial Analysis")
 print("-----------------------")
