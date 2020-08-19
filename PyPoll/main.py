@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath=os.path.join('Pypoll','election_data.csv')
+csvpath=os.path.join('election_data.csv')
 Candidates=["empty"]
 Results=[10]
 Percent=[]
@@ -42,7 +42,7 @@ print("---------------------")
 print(f"Winner: {Winner}")
 print("---------------------")
 
-output_path = os.path.join('PyPoll','Election_Results.txt')
+output_path = os.path.join('Election_Results.txt')
 
 with open(output_path, 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')
